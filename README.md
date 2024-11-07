@@ -12,7 +12,7 @@
 - Employee-Department Relationship: Employees belong to a Department
 - Pagination for Employee and Department listings 
 
-## Endpoints                                                                                                                           | ADMIN only                       |
+## Endpoints                                                                                                                           
 ### DepartmentController Endpoints
 
 | #   | URL                             | Http Method | Function                        | Description                                                                                                 |
