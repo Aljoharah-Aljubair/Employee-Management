@@ -65,20 +65,20 @@ The frontend application is built using Angular@14 and styled with Angular Mater
 
 ### -Department
 #### Department List
-![Department List](screenshots/List-article-1.png)
+![Department List](ScreenShot/list-department.png)
 
 #### Add department
-![Add department](screenshots/Creat-article.png)
+![Add department](ScreenShot/add-department.png)
 
 
 ### -Employee
 #### Employee List
-![Employee List](screenshots/Article-detail-admin-1.png)
+![Employee List](ScreenShot/list-employee.png)
 
 ### Pagination
-![Pagination](screenshots/Article-detail-admin-1.png)
+![Pagination](ScreenShot/pagination-employee.png)
 
 ### Edit Employee
-![Edit Employee](screenshots/Article-detail-admin-1.png)
+![Edit Employee](ScreenShot/edit-employee.png)
 
 
