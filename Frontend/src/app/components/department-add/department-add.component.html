@@ -1,0 +1,28 @@
+<mat-card class="center-card">
+    <form [formGroup]="departmentForm" (ngSubmit)="onSubmit()">
+        <h3 mat-card-title class="form-title">Department Information</h3>
+        <mat-card-content>
+            <mat-label>Name</mat-label>
+            <mat-form-field appearance="fill">
+
+                <input matInput formControlName="name" required>
+                <mat-error *ngIf="departmentForm.get('name')?.hasError('required') && departmentForm.get('name')?.touched">
+                    Name is required.
+                </mat-error>
+            </mat-form-field>
+
+            <mat-label>Location</mat-label>
+            <mat-form-field appearance="fill">
+                <input matInput formControlName="location" required>
+                <mat-error *ngIf="departmentForm.get('location')?.hasError('location') && departmentForm.get('location')?.touched">
+                    Enter a valid email address.
+                </mat-error>
+            </mat-form-field>
+
+            <div class="button-container">
+                <button mat-raised-button color="primary" type="submit" [disabled]="departmentForm.invalid"
+                    class="submit-button">Submit</button>
+            </div>
+        </mat-card-content>
+    </form>
+</mat-card>
