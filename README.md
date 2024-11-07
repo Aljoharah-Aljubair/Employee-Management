@@ -57,7 +57,7 @@
 ## Frontend
 The frontend application is built using Angular@14 and styled with Angular Material to provide a clean, responsive, and professional user interface. The application includes components for:
 
-- ** Employee Management**: Add, edit, and list employees
+-  **Employee Management**: Add, edit, and list employees
 -  **Department Management**: Add, edit, and list departments
 -  **API Integration**: The frontend communicates with the Spring Boot backend to perform CRUD operations on both Employee and Department entities
 
