@@ -20,7 +20,7 @@
 | 1   | /departments                    | POST        | Create a new department         | Department fields: Name, Location.                                                                        |
 | 2   | /departments/{id}               | GET         | Return a department by ID       | Id is a path variable of a specific department in the DB.                                                     |
 | 3   | /departments                    | GET         | Return the department list with pagination | Spring Pageable params for pagination .                                                           |
-| 4   | /departments/{id}               | PUT         | Update a specific department    | Id is a path variable of a specific department in the DB, with fields to update (e.g., Name, Description).    |
+| 4   | /departments/{id}               | PUT         | Update a specific department    | Id is a path variable of a specific department in the DB, with fields to update    |
 | 5   | /departments/{id}               | DELETE      | Delete a specific department    | Id is a path variable of a specific department in the DB.                                                     |
 
 ### EmployeeController Endpoints
@@ -30,7 +30,7 @@
 | 1   | /employees                      | POST        | Create a new employee           | Employee fields: Name, Email, Phone Number, Department.                                                     |
 | 2   | /employees/{id}                 | GET         | Return an employee by ID        | Id is a path variable of a specific employee in the DB.                                                      |
 | 3   | /employees                      | GET         | Return the employee list with pagination | Spring Pageable params for pagination.                                                           |
-| 4   | /employees/{id}                 | PUT         | Update a specific employee      | Id is a path variable of a specific employee in the DB, with fields to update (e.g., Name, Position, Salary). |
+| 4   | /employees/{id}                 | PUT         | Update a specific employee      | Id is a path variable of a specific employee in the DB, with fields to update |
 | 5   | /employees/{id}                 | DELETE      | Delete a specific employee      | Id is a path variable of a specific employee in the DB.                                                      |
 
 
