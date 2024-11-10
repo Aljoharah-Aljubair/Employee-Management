@@ -52,14 +52,12 @@ public class EmployeeService {
         List<EmployeeResponse> employeeResponses = employeePage.stream()
                 .map(employee -> modelMapper.map(employee, EmployeeResponse.class))
                 .collect(Collectors.toList());
-
-        // Return PageResponse with all necessary fields
         return new PageResponse<>(
                 employeeResponses,
-                employeePage.getNumber(),  // currentPage
-                employeePage.getTotalPages(),  // totalPages
-                employeePage.getTotalElements(),  // totalElements
-                employeePage.getSize()  // pageSize
+                employeePage.getNumber(),  
+                employeePage.getTotalPages(), 
+                employeePage.getTotalElements(), 
+                employeePage.getSize() 
         );
     }
 
