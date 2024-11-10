@@ -1,14 +1,8 @@
 <mat-toolbar color="primary">
-
-    <!-- Title -->
     <div class="header">
       <span class="employee-management">Employee Management</span>
     </div>
-  
-    <!-- Spacer to push the buttons to the right -->
     <span class="spacer"></span>
-  
-    <!-- Conditional buttons based on user state -->
   
     <button mat-raised-button color="primary" class="toolbar-button" (click)="onClick_listOfEmployees()">
        List of employees
@@ -18,7 +12,5 @@
         List of department
     </button>
 </mat-toolbar>
-  
-  <!-- Router outlet for rendering components based on routes -->
   <router-outlet></router-outlet>
   
