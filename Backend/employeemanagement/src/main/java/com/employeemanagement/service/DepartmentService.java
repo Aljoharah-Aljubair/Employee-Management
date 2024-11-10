@@ -26,9 +26,7 @@ public class DepartmentService {
     }
 
     public DepartmentResponse createDepartment(DepartmentRequest departmentRequest) {
-        // Map request to entity using ModelMapper
         Department department = modelMapper.map(departmentRequest, Department.class);
-        // Save department and map saved entity back to response
         Department savedDepartment = departmentRepository.save(department);
         return modelMapper.map(savedDepartment, DepartmentResponse.class);
     }
@@ -62,13 +60,12 @@ public class DepartmentService {
         List<DepartmentResponse> departmentResponses = departmentPage.stream()
                 .map(department -> modelMapper.map(department, DepartmentResponse.class))
                 .collect(Collectors.toList());
-        // Return PageResponse with all necessary fields
         return new PageResponse<>(
                 departmentResponses,
-                departmentPage.getNumber(),  // currentPage
-                departmentPage.getTotalPages(),  // totalPages
-                departmentPage.getTotalElements(),  // totalElements
-                departmentPage.getSize()  // pageSize
+                departmentPage.getNumber(), 
+                departmentPage.getTotalPages(), 
+                departmentPage.getTotalElements(),
+                departmentPage.getSize()
         );
     }
 
